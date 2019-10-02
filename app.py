@@ -22,11 +22,11 @@ def callback():
     decoded = json.loads(json_line)
     user = decoded['originalDetectlntenRequest']['payload']['data']['replyToken']
     userText = decoded['queryResult']['intrnt']['displayName']
-    if (pleng == 'สวัสดี') :
+    if (userText == 'สวัสดี') :
         sendText(user,ดีจ้า')
-    elif (pleng == 'หิว') :
+    elif (userText == 'หิว') :
        sendText(user,เหมือนกัน')
-    elif (pleng == 'ไปฟ่า') :
+    elif (userText == 'ไปฟ่า') :
        sendText(user,ไปเล้ย')
     else :
         pass
