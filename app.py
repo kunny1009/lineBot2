@@ -23,7 +23,7 @@ def callback():
     user = decoded['originalDetectlntenRequest']['payload']['data']['replyToken']
     userText = decoded['queryResult']['intrnt']['displayName']
     if (pleng == 'สวัสดี'):
-sendText(user,'เออดีด้วย')
+        sendText(user,'เออดีด้วย')
     if (pleng == 'ไรคะ'):
         sendText(user,'งื้ม')
     if (pleng == 'อุ้ว'):
